@@ -13,6 +13,9 @@
 		540E3FEB29D585AA004A8972 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 540E3FE929D585AA004A8972 /* Main.storyboard */; };
 		540E3FED29D585AB004A8972 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 540E3FEC29D585AB004A8972 /* Assets.xcassets */; };
 		540E3FF029D585AB004A8972 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 540E3FEE29D585AB004A8972 /* LaunchScreen.storyboard */; };
+		540E3FF829D58758004A8972 /* Options.swift in Sources */ = {isa = PBXBuildFile; fileRef = 540E3FF729D58758004A8972 /* Options.swift */; };
+		548A473C29D5EF1A008D11E7 /* Montserrat-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 540E3FFB29D5EC48004A8972 /* Montserrat-ExtraBold.ttf */; };
+		548A473D29D5EF2E008D11E7 /* Montserrat-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 540E3FFA29D5EC48004A8972 /* Montserrat-Light.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		540E3FEC29D585AB004A8972 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		540E3FEF29D585AB004A8972 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		540E3FF129D585AB004A8972 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		540E3FF729D58758004A8972 /* Options.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Options.swift; sourceTree = "<group>"; };
+		540E3FFA29D5EC48004A8972 /* Montserrat-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Light.ttf"; sourceTree = "<group>"; };
+		540E3FFB29D5EC48004A8972 /* Montserrat-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-ExtraBold.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +62,26 @@
 		540E3FE229D585AA004A8972 /* UIKitApp */ = {
 			isa = PBXGroup;
 			children = (
+				540E3FF929D5EC3A004A8972 /* fonts */,
 				540E3FE329D585AA004A8972 /* AppDelegate.swift */,
 				540E3FE529D585AA004A8972 /* SceneDelegate.swift */,
 				540E3FE729D585AA004A8972 /* ViewController.swift */,
+				540E3FF729D58758004A8972 /* Options.swift */,
 				540E3FE929D585AA004A8972 /* Main.storyboard */,
 				540E3FEC29D585AB004A8972 /* Assets.xcassets */,
 				540E3FEE29D585AB004A8972 /* LaunchScreen.storyboard */,
 				540E3FF129D585AB004A8972 /* Info.plist */,
 			);
 			path = UIKitApp;
+			sourceTree = "<group>";
+		};
+		540E3FF929D5EC3A004A8972 /* fonts */ = {
+			isa = PBXGroup;
+			children = (
+				540E3FFB29D5EC48004A8972 /* Montserrat-ExtraBold.ttf */,
+				540E3FFA29D5EC48004A8972 /* Montserrat-Light.ttf */,
+			);
+			path = fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,7 +142,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				548A473D29D5EF2E008D11E7 /* Montserrat-Light.ttf in Resources */,
 				540E3FF029D585AB004A8972 /* LaunchScreen.storyboard in Resources */,
+				548A473C29D5EF1A008D11E7 /* Montserrat-ExtraBold.ttf in Resources */,
 				540E3FED29D585AB004A8972 /* Assets.xcassets in Resources */,
 				540E3FEB29D585AA004A8972 /* Main.storyboard in Resources */,
 			);
@@ -138,6 +157,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				540E3FF829D58758004A8972 /* Options.swift in Sources */,
 				540E3FE829D585AA004A8972 /* ViewController.swift in Sources */,
 				540E3FE429D585AA004A8972 /* AppDelegate.swift in Sources */,
 				540E3FE629D585AA004A8972 /* SceneDelegate.swift in Sources */,
