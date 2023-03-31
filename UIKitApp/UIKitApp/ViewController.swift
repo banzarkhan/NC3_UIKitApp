@@ -24,38 +24,30 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
         label.font = UIFont(name: "Montserrat-ExtraBold", size: 30)
         label.text = textFromOption(option: option)
-//        let imageView = UIImageView(frame: CGRect(x: 115, y: 528, width: 145, height: 128))
-//
-//        if buttonIsActive {
-//            imageView.alpha = 0.0 // set the initial alpha value to 0.0
-//            imageView.image = UIImage(named: "catImage")
-//            view.addSubview(imageView)
-//            UIView.animate(withDuration: 0.5, animations: {
-//                imageView.alpha = 1.0 // fade in the image view
-//            })
-//        } else {
-//            imageView.image = nil
-//        }
 //        145, 128 / 115, 528
     }
     
     
     @IBAction func tapped1(_ sender: UIButton) {
+        sender.pulsate()
         self.option = .one
         label.text = textFromOption(option: option)
     }
     
     @IBAction func tapped2(_ sender: UIButton) {
+        sender.pulsate()
         self.option = .two
         label.text = textFromOption(option: option)
     }
     
     @IBAction func tapped3(_ sender: UIButton) {
+        sender.pulsate()
         self.option = .three
         label.text = textFromOption(option: option)
     }
     
     @IBAction func doneTapped(_ sender: UIButton) {
+        sender.pulsate()
         let button = doneButton
         button?.removeFromSuperview()
         
@@ -73,3 +65,14 @@ class ViewController: UIViewController {
     }
 }
 
+extension UIButton {
+    func pulsate() {
+    let pulse = CASpringAnimation(keyPath: "transform.scale")
+    pulse.duration = 0.4
+    pulse.fromValue = 0.98
+    pulse.toValue = 1.0
+    pulse.initialVelocity = 0.5
+    pulse.damping = 1.0
+    layer.add(pulse, forKey: nil)
+    }
+}
