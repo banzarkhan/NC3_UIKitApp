@@ -36,3 +36,7 @@ Contributions to this project are welcome. To contribute, follow these steps:
 4. Commit your changes (git commit -m 'Add some feature')
 5. Push to the branch (git push origin feature/<feature-name>)
 6. Create a new Pull Request
+
+## Image
+
+Emoji icon is <a href="http://www.freepik.com">Designed by rawpixel.com / Freepik</a>
